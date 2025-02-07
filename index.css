@@ -75,7 +75,7 @@ body{
         color: #333333;
         scale: 1.2;
         transition: 0.6s;
-        transform: rotate(-20deg);
+        transform: rotate(-10deg);
         box-shadow: 0 1px 10px #132f54;
 
     }
@@ -88,24 +88,29 @@ body{
             font-weight: 500;
         }
     }
-    img{
+    .wes{
         transition: 0.6s;
+        width: 300px;
+        height: 100px;
+        border-radius: 30px;
     }
-    img:hover{
-        scale: 1.2;
+    .wes:hover{
+        scale: 1.1;
         transition: 0.6s;
-        transform: translateY(-40px);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }
 .cont1{
     margin-top: 140px;
     margin-bottom: 50px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     overflow: hidden;
     .sem{
         width: 328px;
         background-image: url('./svg/as.svg');
         height: 283px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         p{
             font-size: 16px;
             font-weight: 400;
@@ -147,6 +152,8 @@ body{
         
         width: 328px;
         height: 283px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
         background-image: url('./svg/jbjb.svg');
         p{
             font-size: 16px;
@@ -158,31 +165,223 @@ body{
         }
     }
 }
-@media (max-width: 1470px) {
+@media (min-width: 1600px) {
     .container{
         padding: 0 20px;
     }
     .cont1{
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
         overflow: hidden;
-    }   
-    .cont{
-        justify-content: center;
-    } 
-    .ong{
-        font-size: 35px;
-    }
-    .chap{
-        display: flex;
-        flex-direction: column;
     }
 }
-@media (max-width: 1470px) {
+@media (max-width: 1415px) {
+    .container{
+        padding: 0 10px;
+    }
+}
+@media (max-width: 1335px) {
+    .container{
+        padding: 0 20px;
+    }
     .cont{
         flex-direction: column;
-        justify-content: center;
-    } 
+    }
+    .ong{
+        padding: 0 0;
+        h1{
+            font-size: 65px;
+        }
+        p{
+            font-size: 24px;
+        }
+        button{
+            width: 150px;
+            height: 46px;
+            padding: 13px 20px;
+            font-size: 16px;
+        }
+    }
+    .cont1{
+        flex-direction: column;
+        .sem{
+            border-bottom-left-radius: 0px;
 
+        }
+        .sem1{
+            border-top-right-radius: 20px;
+            
+        }
+        .sem2{
+            border-bottom-left-radius: 20px;
+            
+        }
+        .sem3{
+            border-top-right-radius: 0px;
+            
+        }
+    }
+}
+@media (max-width: 1015px) {
+    .container{
+        padding: 0 10px;
+    }
+    .cont{
+        flex-direction: column;
+        text-align: center;
+    }
+    .ong{
+        padding: 0 0;
+        h1{
+            font-size: 45px;
+        }
+        p{
+            padding: 20px 0;
+            font-size: 18px;
+        }
+        button{
+            width: 110px;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 13px;
+        }
+    }
+    .chap{
+        .asab{
+            margin-top: 50px;
+            .yz{
+                span{
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 11px;
+                    
+                }
+
+            }
+            .wes{
+                transition: 0.6s;
+                width: 250px;
+                height: 100px;
+                border-radius: 20px;
+                img{
+                    width: 53px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 880px) {
+    .container{
+        padding: 0 5px;
+    }
+    .cont{
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+    .chap{
+        gap: 5px;
+    }
+    .ong{
+        padding: 0 0;
+        h1{
+            font-size: 35px;
+        }
+        p{
+            padding: 10px 0;
+            font-size: 18px;
+        }
+        button{
+            width: 110px;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 13px;
+        }
+    }
+    .cont1{
+        .sem{
+            width: 280px;
+            height: 260px;
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                padding: 180px 20px ;
+            }
+        }
+        .sem1{
+            width: 280px;
+            height: 260px;
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                padding: 180px 20px ;
+            }
+        }
+        .sem2{
+            width: 280px;
+            height: 260px;
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                padding: 180px 20px ;
+            }
+        }
+        .sem3{
+            width: 280px;
+            height: 260px;
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.2px;
+                padding: 180px 20px ;
+            }
+        }
+    }
+}
+@media (max-width: 650px){
+    .cont{
+        .chap{
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+    .cont1{
+        .ssb{
+            flex-direction: column;
+            .sem{
+                border-top-right-radius: 20px;
+            }
+            .sem1{
+                border-top-right-radius: 0px;
+            }
+
+        }
+        .ajir{
+            flex-direction: column;
+            .sem2{
+                border-bottom-left-radius: 0px;
+            }
+            .sem3{
+                border-bottom-left-radius: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .ong{
+        h1{
+            font-size: 26px;
+        }
+        p{
+            font-size: 10px;
+        }
+        button{
+            width: 100px;
+            height: 25px;
+            font-size: 11px;
+        }
+    }
 }
